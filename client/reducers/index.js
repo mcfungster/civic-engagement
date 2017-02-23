@@ -1,13 +1,12 @@
 import { combineReducers } from 'redux';
-
-import counterReducer from './counter';
-import counter2Reducer from './counter2';
 import locBarReducer from './locBarReducer';
+import politicianSearchReducer from './politicianSearchReducer';
+import meetupReducer from './meetupSearchReducer';
 
 const rootReducer = combineReducers({
-  locBar: locBarReducer,
-  counter: counterReducer,
-  counter2: counter2Reducer
+  GoogleResults: locBarReducer,
+  News: politicianSearchReducer,
+  Meetup: meetupReducer
 });
 
 export default rootReducer;

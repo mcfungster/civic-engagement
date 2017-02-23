@@ -4,14 +4,13 @@ import { bindActionCreators } from 'redux';
 
 import submitLoc from '../actions/locationBarActions';
 
-class LocationBar extends Component{
+class LocationBar extends Component {
   constructor(props) {
     super(props);
     this.state = { searchLocation: '' };
     this.onInputChange = this.onInputChange.bind(this);
     this.onFormSubmit = this.onFormSubmit.bind(this);
   }
-
   onInputChange(event) {
     console.log(event.target.value);
     this.setState({ searchLocation: event.target.value });
@@ -24,6 +23,7 @@ class LocationBar extends Component{
   }
 
   render() {
+    console.log("in locbar");
     return (
       <form onSubmit={this.onFormSubmit}>
         <input
