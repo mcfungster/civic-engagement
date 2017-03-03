@@ -7,6 +7,7 @@ import Sidebar from 'grommet/components/Sidebar';
 import Box from 'grommet/components/Box';
 import Header from 'grommet/components/Header';
 import Title from 'grommet/components/Title';
+import HeaderContainer from '../containers/headerContainer';
 
 const Dashboard = () =>
   (
@@ -14,13 +15,18 @@ const Dashboard = () =>
       full="true"
       className="dashboard"
     >
+
+      <Header className="landing-main-nav" size="small" float={false} fixed={true}>
+        <HeaderContainer />
+      </Header>
+
       <Header
         className="dashboard-header"
         fixed={false}
       >
-        <Title>
+        {/* <Title>
           Civic Meetup Event Search
-        </Title>
+        </Title> */}
       </Header>
       <Split
         fixed={false}
