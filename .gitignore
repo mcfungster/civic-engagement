@@ -42,9 +42,6 @@ jspm_packages
 # babel-compiled file(s)
 client/dist/
 
-# static lookup tables		
-id_tables 
-
 client/debug.js
 client/components/defaultProps.js
 .vscode
