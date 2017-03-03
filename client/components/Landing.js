@@ -17,6 +17,7 @@ import Heading from 'grommet/components/Heading';
 import HeaderContainer from '../containers/headerContainer';
 
 import meetupSearch from '../actions/meetupSearchActions';
+import locationSearch from '../actions/locationBarActions';
 
 
 class Landing extends Component {
@@ -45,6 +46,7 @@ class Landing extends Component {
   onSubmit(event) {
     event.preventDefault();
     this.props.meetupSearch(this.state.input);
+    this.props.locationSearch(this.state.input);
     this.context.router.push('/dashboard');
   }
 
@@ -139,4 +141,4 @@ function mapStateToProps(state) { // Temporary state setup. Please feel free to 
   };
 }
 
-export default connect(mapStateToProps, { meetupSearch })(Landing);
+export default connect(mapStateToProps, { locationSearch, meetupSearch })(Landing);

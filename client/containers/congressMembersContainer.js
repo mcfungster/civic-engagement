@@ -5,6 +5,8 @@ import React, { Component } from 'react';
 // import GoogleList from '../components/googleListComponent';
 import LocationBar from '../components/locationBar';
 import RepDisplay from '../components/repDisplay';
+import Header from 'grommet/components/Header';
+import HeaderContainer from '../containers/headerContainer';
 
 // class CongressMembersContainer extends Component {
 //   componentWillMount() {
@@ -16,9 +18,12 @@ const CongressMembersContainer = (props) => {
     // const { reps } = this.props;
   return (
     <div>
-      {/*<LocationBar />*/}
+      <Header className="landing-main-nav" size="small" float={false} fixed={true}>
+        <HeaderContainer />
+      </Header>
+      <div style={{ marginTop: "80px" }}>
       <RepDisplay />
-      {/*<RepDisplay reps={reps} />*/}
+      </div>
     </div>
   );
 };
