@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../components/HeaderView';
+import Header from '../containers/HeaderContainer';
 import Menu from '../components/sidebar';
 import ResultsComp from './reqContainer';
 
@@ -23,12 +23,9 @@ class SidebarContainer extends React.Component {
 
   render() {
     return (
-      <div id="outer-container">
-        <header><Header headerIcons={iconUrls} /></header>
-        <Menu pageWrapID={'page-wrap'} outerContainerId={'outer-container'} />
-        <div id="page-wrap" style={divStyle} >
+      <div>
+          <Header />
           <ResultsComp />
-        </div>
       </div>
     );
   }

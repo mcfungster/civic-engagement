@@ -13,8 +13,10 @@ class ResultsComp extends React.Component {
     const { data } = this.props;
     return (
       <div>
-        <LocationBar />
-        <GoogleList GoogleResults={data} />
+        <div style={{paddingTop: '100px', paddingLeft: '100' }}>
+          <LocationBar />
+          <GoogleList GoogleResults={data} />
+        </div>
       </div>
     );
   }
