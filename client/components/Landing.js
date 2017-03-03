@@ -96,7 +96,7 @@ class Landing extends Component {
 
         <Section align="center" justify="center" colorIndex="grey-4-a" size="full" className="landing-panel2">
           <Headline align="center" size="small">
-            Content and stuff about how cool the app is etc.
+            We can’t change the country without changing our state—and we can’t change our state without changing our towns and cities. CivicsPortal is today’s soapbox meant to help you both speak up in and listen to your communitites. Sign up, and make local politics sexy again.
           </Headline>
         </Section>
         <Section align="center" justify="center" colorIndex="neutral-1-a" size="full" className="landing-team">
