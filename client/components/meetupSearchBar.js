@@ -19,6 +19,10 @@ class MeetupSearchBar extends Component {
     this.onSubmit = this.onSubmit.bind(this);
   }
 
+  componentDidMount() {
+    this.props.meetupSearch(this.props.Location);
+  }
+
   onInputChange(event) {
     console.log(event.target.value);
     this.setState({ input: event.target.value });
@@ -85,7 +89,8 @@ class MeetupSearchBar extends Component {
 
 function mapStateToProps(state) { // Temporary state setup. Please feel free to modify this.
   return {
-    EventLocation: state.input
+    EventLocation: state.input,
+    Location: state.LoggedIn.userData.location
   };
 }
 
