@@ -11,8 +11,10 @@ import Paragraph from 'grommet/components/Paragraph';
 import { setLoggedIn } from '../actions/loggingActions';
 import ImageUpload from './ImageUpload';
 import submitLoc from '../actions/locationBarActions';
-import Header from '../containers/headerContainer';
+import HeaderContainer from '../containers/headerContainer';
 import stableHeader from '../components/stableHeader';
+import Header from 'grommet/components/Header';
+
 
 const profileSidebarStyle = {
   position: 'absolute',
@@ -49,7 +51,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ setLoggedIn, submitLoc }, dispatch) 
+  return bindActionCreators({ setLoggedIn, submitLoc }, dispatch)
 }
 
 class ProfileEdit extends Component {
@@ -124,7 +126,12 @@ class ProfileEdit extends Component {
     return (
 
     <div>
-      <Header />
+
+      <Header className="landing-main-nav" size="small" float={false} fixed={true}>
+        <HeaderContainer />
+      </Header>
+
+      {/* <Header /> */}
         <div style={{ paddingTop: '70px' }} />
           <h1 style={{ textAlign: 'center' }}> Welcome to your profile </h1>
           <div>

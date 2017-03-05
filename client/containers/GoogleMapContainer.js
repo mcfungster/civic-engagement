@@ -22,6 +22,7 @@ class MapContainer extends Component {
     // this.toggleInfoWindow = this.toggleInfoWindow.bind(this);
   }
 
+
   componentDidUpdate(prevProps) {
     console.log('In Component Did Update');
     const old = JSON.stringify(prevProps.MeetupEvents);
@@ -144,7 +145,8 @@ class MapContainer extends Component {
 function mapStateToProps(state) {
   return {
     MeetupEvents: state.Meetup.eventResults.results,
-    InfoWindow: state.MeetupMap
+    InfoWindow: state.MeetupMap,
+    Location: state.LoggedIn.userData.location
   };
 }
 
