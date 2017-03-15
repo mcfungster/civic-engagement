@@ -38,9 +38,18 @@
 From within the root directory:
 
 ```sh
-sudo npm install -g bower
 npm install
-bower install
+```
+### Development Work
+
+From within the root directory:
+
+```sh
+npm start
+```
+
+```sh
+npm run dev
 ```
 
 ### Roadmap
