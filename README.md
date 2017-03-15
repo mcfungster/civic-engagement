@@ -45,8 +45,11 @@ npm install
 From within the root directory:
 
 ```sh
-npm run dev
 npm start
+```
+
+```sh
+npm run dev
 ```
 
 ### Roadmap
