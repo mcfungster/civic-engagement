@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import { bio as search } from '../actions/politicianSearchActions';
+import { bio as search } from '../../actions/politicianSearchActions';
 
 class RepBillsList extends Component {
   constructor(props) {

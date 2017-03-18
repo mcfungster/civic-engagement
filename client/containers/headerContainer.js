@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from '../components/HeaderView';
-import Menu from '../components/sidebar';
 import ResultsComp from './reqContainer';
 
 const divStyle = {
