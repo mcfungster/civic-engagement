@@ -1,8 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import ListItem from './MeetupEventListItem';
 import Accordion from 'grommet/components/Accordion';
 import AccordionPanel from 'grommet/components/AccordionPanel';
+import ListItem from './MeetupEventListItem';
 
 
 class EventListComponent extends Component {
