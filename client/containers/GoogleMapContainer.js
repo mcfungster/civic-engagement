@@ -145,8 +145,8 @@ class MapContainer extends Component {
 function mapStateToProps(state) {
   return {
     MeetupEvents: state.Meetup.eventResults.results,
-    InfoWindow: state.MeetupMap,
-    Location: state.LoggedIn.userData.location
+    InfoWindow: state.MeetupMap
+    // Location: state.LoggedIn.userData.location
   };
 }
 

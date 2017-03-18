@@ -20,7 +20,9 @@ class MeetupSearchBar extends Component {
   }
 
   componentDidMount() {
-    this.props.meetupSearch(this.props.Location);
+    if (this.props.UserData) {
+      this.props.meetupSearch(this.props.UserData.location);
+    }
   }
 
   onInputChange(event) {
@@ -90,7 +92,7 @@ class MeetupSearchBar extends Component {
 function mapStateToProps(state) { // Temporary state setup. Please feel free to modify this.
   return {
     EventLocation: state.input,
-    Location: state.LoggedIn.userData.location
+    UserData: state.LoggedIn.userData
   };
 }
 
