@@ -52,7 +52,7 @@ class Landing extends Component {
 
   render() {
     return (
-      <Article scrollStep={true}>
+      <Article scrollStep={false}>
         <Header size="small" float={false} fixed={true}>
           <Box direction="row" align="center" pad={{ between: "small" }} className="landing-login-header">
             <Button label="Login" href="/login" path="login" />
