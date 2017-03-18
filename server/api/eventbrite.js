@@ -13,13 +13,10 @@ const eventbrite = {
     Google.geocode(location || 10001)
     .catch(err => console.error(err))
     .then((geoInfo) => {
-      // console.log(geoInfo[0].geometry.location);
-      // console.log(Object.keys(geoInfo));
       const { lat, lng } = geoInfo[0].geometry.location;
       return { lat, lng };
     })
     .then((coords) => {
-      // console.log(coords);
       const options = {
         token: eventbriteApiKey,
         categories: 112,

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Route, IndexRoute, Link } from 'react-router';
 // import Axios from 'axios';
-import Req from './src/req';
 import LocationBar from './components/locationBar';
 import MenuContainer from './containers/sidebarContainer';
 import MapContainer from './containers/GoogleMapContainer';
@@ -51,7 +50,6 @@ const testing = function testing() {
 export default (
   <Route path="/" >
     <IndexRoute component={Landing} />
-    <Route path="req" component={Req} />
     <Route path="location" component={LocationBar} />
     <Route path="map" component={MapContainer} />
     <Route path="menuAnd" component={MenuContainer} />
