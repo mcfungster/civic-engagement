@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Doughnut } from 'react-chartjs-2';
-import { DoughnutTemplate } from '../components/graphTemplates';
+import { DoughnutTemplate } from '../../components/graphTemplates';
 
 const RepVoteStatsDoughnut = ({ rep }) => {
   const doughnutGraphData = Object.assign({}, DoughnutTemplate);

@@ -107,17 +107,17 @@ class Landing extends Component {
           </Heading>
           <Box direction="row" size="full" pad={{ between: 'large' }} className="landing-bio-container">
             <Box pad={{ between: 'small' }}>
-              <img src={'../media/nino.jpg'} className="landing-bio-img"/>
+              <img src={'../media/nino.jpg'} className="landing-bio-img" />
               <Heading tag="h3" className="landing-bio-name">Nino Rekhviashivili</Heading>
               <h4>Fullstack Developer</h4>
             </Box>
             <Box pad={{ between: 'small' }}>
-              <img src={'../media/kevin.jpg'} className="landing-bio-img"/>
+              <img src={'../media/kevin.jpg'} className="landing-bio-img" />
               <Heading tag="h3" className="landing-bio-name">Kevin Fung</Heading>
               <h4>Fullstack Developer</h4>
             </Box>
             <Box pad={{ between: 'small' }}>
-              <img src={'../media/rishi.jpg'} className="landing-bio-img"/>
+              <img src={'../media/rishi.jpg'} className="landing-bio-img" />
               <Heading tag="h3" className="landing-bio-name">Rishi Shah</Heading>
               <h4>Fullstack Developer</h4>
             </Box>
@@ -129,7 +129,7 @@ class Landing extends Component {
       </Article>
     );
   }
- }
+}
 
 Landing.contextTypes = {
   router: PropTypes.object

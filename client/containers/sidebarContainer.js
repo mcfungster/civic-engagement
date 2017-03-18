@@ -1,6 +1,5 @@
 import React from 'react';
 import HeaderContainer from '../containers/headerContainer';
-import Menu from '../components/sidebar';
 import ResultsComp from './reqContainer';
 import Header from 'grommet/components/Header';
 
