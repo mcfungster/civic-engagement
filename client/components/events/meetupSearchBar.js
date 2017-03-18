@@ -7,7 +7,7 @@ import SearchInput from 'grommet/components/SearchInput';
 // import FormFields from 'grommet/components/FormFields';
 // import FormField from 'grommet/components/FormField';
 
-import meetupSearch from '../actions/meetupSearchActions';
+import meetupSearch from '../../actions/meetupSearchActions';
 
 class MeetupSearchBar extends Component {
   constructor(props) {

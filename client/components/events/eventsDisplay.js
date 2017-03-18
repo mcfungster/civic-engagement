@@ -5,8 +5,8 @@ import Box from 'grommet/components/Box';
 import Header from 'grommet/components/Header';
 import Title from 'grommet/components/Title';
 import Map from '../../containers/GoogleMapContainer';
-import Search from '../meetupSearchBar';
-import EventList from '../MeetupEventsList';
+import Search from './meetupSearchBar';
+import EventList from './meetupEventsList';
 import HeaderContainer from '../../containers/headerContainer';
 
 const EventsDisplay = () =>
