@@ -1,10 +1,7 @@
 import React from 'react';
 import { Route, IndexRoute, Link } from 'react-router';
-import Axios from 'axios';
-// import ReqContainer from './containers/ReqContainer'
+// import Axios from 'axios';
 import Req from './src/req';
-
-// import MapContainer from './containers/GoogleMapContainer';
 import LocationBar from './components/locationBar';
 import MenuContainer from './containers/sidebarContainer';
 import MapContainer from './containers/GoogleMapContainer';
@@ -17,13 +14,8 @@ import Auth from './components/Auth';
 import Top20 from './components/Top20Wrapper';
 import HeaderContainer from './containers/headerContainer';
 import Landing from './components/Landing';
-// import MapContainer from './containers/GoogleMapContainer';
-// import LocationBar from './components/locationBar';
-// import MenuContainer from './containers/sidebarContainer';
-
 import CongressContainer from './containers/congressMembersContainer';
 
-  // <Route path="map" component={MapContainer} />
 const home = function home() {
   return (<div>
     <h1>welcome to the home page!</h1>
