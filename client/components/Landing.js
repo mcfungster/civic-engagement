@@ -32,12 +32,6 @@ class Landing extends Component {
     this.onSubmit = this.onSubmit.bind(this);
   }
 
-  toggleVisibility() {
-    this.setState({
-      searchVisibility: true
-    });
-  }
-
   onInputChange(event) {
     console.log(event.target.value);
     this.setState({ input: event.target.value });
@@ -50,6 +44,11 @@ class Landing extends Component {
     this.context.router.push('/dashboard');
   }
 
+  toggleVisibility() {
+    this.setState({
+      searchVisibility: true
+    });
+  }
 
   render() {
     return (
