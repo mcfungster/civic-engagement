@@ -100,14 +100,14 @@ class MapContainer extends Component {
 }
 
 MapContainer.propTypes = {
-  MeetupEvents: PropTypes.arrayof(PropTypes.object),
+  // MeetupEvents: PropTypes.arrayOf(PropTypes.object),
   toggleInfoWindow: PropTypes.func,
   closeInfoWindow: PropTypes.func,
-  InfoWindow: PropTypes.objectof(PropTypes.object)
+  InfoWindow: PropTypes.objectOf(PropTypes.object)
 };
 
 MapContainer.defaultProps = {
-  MeetupEvents: 'n/a',
+  // MeetupEvents: 'n/a',
   toggleInfoWindow: 'n/a',
   closeInfoWindow: 'n/a',
   InfoWindow: 'n/a'

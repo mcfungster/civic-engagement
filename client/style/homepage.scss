@@ -1,0 +1,72 @@
+.home-searchbar {
+  min-width: 375px;
+  input {
+    min-width: 375px;
+    background-color: #fff;
+  }
+}
+
+.home-toggle {
+  // background-color: grey;
+}
+
+.home-panel2 {
+  min-height: 300px;
+  padding: 30px;
+}
+
+.home-team {
+  min-height: 400px;
+}
+
+.home-team-header, .home-bio-name {
+  font-weight: 500;
+}
+
+.home-team-header {
+  padding-top: 10px;
+}
+
+.home-bio-img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+}
+
+.home-bio-container {
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 25px;
+}
+
+.grommetux-hero__background {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.home-main-nav {
+  header {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 15px;
+    padding-right: 130px;
+  }
+}
+
+.home-login-header {
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    a {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+}

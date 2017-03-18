@@ -9,11 +9,11 @@ import Header from 'grommet/components/Header';
 import Title from 'grommet/components/Title';
 import HeaderContainer from '../containers/headerContainer';
 
-const Dashboard = () =>
+const EventsDisplay = () =>
   (
     <Box
       full="true"
-      className="dashboard"
+      className="events"
     >
 
       <Header className="landing-main-nav" size="small" float={false} fixed={true}>
@@ -21,7 +21,7 @@ const Dashboard = () =>
       </Header>
 
       <Header
-        className="dashboard-header"
+        className="events-header"
         fixed={false}
       >
         {/* <Title>
@@ -31,10 +31,10 @@ const Dashboard = () =>
       <Split
         fixed={false}
         flex="right"
-        className="dashboard-split"
+        className="events-split"
       >
         <Sidebar
-          className="dashboard-side"
+          className="events-side"
           size="large"
           full={true}
         >
@@ -47,4 +47,4 @@ const Dashboard = () =>
     </Box>
   );
 
-export default Dashboard;
+export default EventsDisplay;
