@@ -5,9 +5,7 @@
 
 ## Team
 
-  - __Product Owner__: nino
-  - __Scrum Master__: kevin
-  - __Development Team Members__: rishi, nino, kevin
+  - __Development Team Members__: Rishi Shah, Kevin Fung
 
 ## Table of Contents
 
