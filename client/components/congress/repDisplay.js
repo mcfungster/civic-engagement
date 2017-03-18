@@ -17,8 +17,8 @@ import RepVoteStats from './repVoteStats';
 import RepVoteStatsLineGraph from './repVoteStatsLineGraph';
 import RepVoteStatsDoughnut from './repVoteStatsDoughnut';
 
-import { bio, bills, votes } from '../actions/politicianSearchActions';
-import testing from '../actions/locationBarActions';
+import { bio, bills, votes } from '../../actions/politicianSearchActions';
+import testing from '../../actions/locationBarActions';
 
 // import { Propublica, testReps } from './defaultProps';
 
