@@ -58,12 +58,8 @@ class RepDisplay extends Component {
   render() {
     // reps have been saved to state! this should always be populated.
     const { reps, propublica } = this.props;
-    /*
-      <RepBillsList
-        key={shortid.generate()}
-        rep={propublica[rep.name]}
-      />
-    */
+
+    // this allows the user to select a rep
     const tabArray = _.map(propublica, rep =>
       <Tab
         key={shortid.generate()}
@@ -75,8 +71,8 @@ class RepDisplay extends Component {
     // parse the correct obj from the GoogleResults
     const rep = reps.filter(({ name }) => name === this.state.current)[0];
 
-    // create a component-generating function for the grommet-box component
-    // to avoid repeating property assignments
+    // create a component-generating function for the grommet-box
+    // component to avoid repeating property assignments
     const BoxCreator = component => (
       <Box
         align='center'
@@ -84,14 +80,14 @@ class RepDisplay extends Component {
         margin='small'
         basis='medium'
       >
-        {component}
+        { component }
       </Box>
     );
 
     return (
       <div>
-        <Tabs>{tabArray}</Tabs>
-        {this.state.current ? (
+        <Tabs>{ tabArray }</Tabs>
+        { this.state.current ? (
           <Box
             direction='row'
             justify='center'
@@ -103,19 +99,16 @@ class RepDisplay extends Component {
                 bio={propublica[this.state.current]}
                 google={rep}
               />)
-            };
+            }
             { BoxCreator(<RepVoteStatsLineGraph rep={propublica[this.state.current]} />) }
             { BoxCreator(<RepVoteStats rep={propublica[this.state.current]} />) }
-            }
           </Box>
         ) : (
-            <Box
-              align='center'
-            >
-              <Spinning />
-              <div>fetching congressional activity</div>
-            </Box>
-          )}
+          <Box align='center' >
+            <div><Spinning /></div>
+            <div>fetching congressional activity</div>
+          </Box>
+        )}
       </div>
     );
   }

@@ -15,7 +15,6 @@ const Google = {
   // Google API too representativeInfoQuery endpoint
   getReps: (req, res) => {
     const address = req.params.address;
-    // console.log(`${repApiURL}?key=${civApiKey}&${address}`);
     request(
       {
         method: 'GET',
@@ -33,7 +32,6 @@ const Google = {
   // Google API too voterInfoQuery endpoint for election related data
   getVoterInfo: (req, res) => {
     const address = req.params.address;
-    // console.log(`${voterApiURL}?key=${civApiKey}&${address}`);
     request(
       {
         method: 'GET',
