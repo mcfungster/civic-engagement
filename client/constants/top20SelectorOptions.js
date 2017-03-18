@@ -1,6 +1,10 @@
 export const categories = [
-  // Array format as follows:
-  // ['Propublica API search parameter', "Key to access data in Response object", "API Response Description", "Description to be rendered on Screen"]
+  /* Array format as follows: [
+    'Propublica API search parameter',
+    "Key to access data in Response object",
+    "API Response Description",
+    "Description to be rendered on Screen"
+  ] */
   ['candidate-loan', 'candidate_loans', 'Candidate Loan', 'Loans'],
   ['contribution-total', 'total_contributions', 'Contribution Total', 'Total Raised'],
   ['debts-owed', 'debts_owed', 'Debts Owed', 'Debt Owed'],
