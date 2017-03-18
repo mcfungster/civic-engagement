@@ -1,4 +1,3 @@
-import _ from 'underscore';
 import shortid from 'shortid';
 
 import Box from 'grommet/components/Box';
@@ -60,7 +59,7 @@ class RepDisplay extends Component {
     const { reps, propublica } = this.props;
 
     // this allows the user to select a rep
-    const tabArray = _.map(propublica, rep =>
+    const tabArray = reps.map(rep =>
       <Tab
         key={shortid.generate()}
         title={rep.name || ''}
