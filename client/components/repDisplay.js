@@ -77,7 +77,7 @@ class RepDisplay extends Component {
 
     // create a component-generating function for the grommet-box component
     // to avoid repeating property assignments
-    const BawksCreator = component => (
+    const BoxCreator = component => (
       <Box
         align='center'
         pad='small'
@@ -97,19 +97,16 @@ class RepDisplay extends Component {
             justify='center'
             full={true}
           >
-            {BawksCreator(
+            { BoxCreator(
               <RepBio
                 key={shortid.generate()}
                 bio={propublica[this.state.current]}
                 google={rep}
-              />
-            )}
-            {BawksCreator(
-              <RepVoteStatsLineGraph rep={propublica[this.state.current]} />
-            )}
-            {BawksCreator(
-              <RepVoteStats rep={propublica[this.state.current]} />
-            )}
+              />)
+            };
+            { BoxCreator(<RepVoteStatsLineGraph rep={propublica[this.state.current]} />) }
+            { BoxCreator(<RepVoteStats rep={propublica[this.state.current]} />) }
+            }
           </Box>
         ) : (
             <Box

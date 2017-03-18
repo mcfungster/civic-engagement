@@ -1,14 +1,5 @@
 import React from 'react';
 import Header from '../components/HeaderView';
-import Menu from '../components/sidebar';
-import ResultsComp from './reqContainer';
-
-const divStyle = {
-  paddingTop: '180px',
-  width: '600',
-  height: '40px',
-  textAlign: 'right'
-};
 
 const iconUrls = [
   ["https://www.shareicon.net/data/128x128/2016/08/04/806712_megaphone_512x512.png", "  EVENTS", '/dashboard'],
@@ -18,14 +9,8 @@ const iconUrls = [
   ["http://icons.iconarchive.com/icons/webalys/kameleon.pics/128/Settings-2-icon.png", "  PROFILE", '/login']
 ];
 
-
-class HeaderContainer extends React.Component {
-
-  render() {
-    return (
-      <header style={{ paddingLeft: '130px', paddingBottom: '40px' }}><Header headerIcons={iconUrls} /></header>
-    );
-  }
-}
+const HeaderContainer = () => (
+  <Header style={{ paddingLeft: '130px', paddingBottom: '40px' }} headerIcons={iconUrls} />
+);
 
 export default HeaderContainer;

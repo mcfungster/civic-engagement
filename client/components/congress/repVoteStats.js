@@ -11,7 +11,7 @@ import ListItem from 'grommet/components/ListItem';
 import Title from 'grommet/components/Title';
 
 import RepVoteStatsDoughnut from './repVoteStatsDoughnut';
-import VoteDetails from './voteDetails';
+import VoteDetails from './repVoteDetails';
 
 class repVoteStats extends Component {
   constructor(props) {

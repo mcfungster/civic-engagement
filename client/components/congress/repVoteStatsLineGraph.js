@@ -4,7 +4,7 @@ import Label from 'grommet/components/Label';
 import Title from 'grommet/components/Title';
 
 import { Line } from 'react-chartjs-2';
-import { LineGraphTemplate } from '../components/graphTemplates';
+import { LineGraphTemplate } from '../../components/graphTemplates';
 
 
 const RepVoteStatsLineGraph = ({ rep }) => {
