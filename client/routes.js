@@ -4,7 +4,7 @@ import { Route, IndexRoute, Link } from 'react-router';
 import LocationBar from './components/locationBar';
 import MenuContainer from './containers/sidebarContainer';
 import MapContainer from './containers/GoogleMapContainer';
-import Dashboard from './components/dashboard';
+import Events from './components/events/eventsDisplay';
 import News from './components/newsList';
 import PageNotFound from './components/PageNotFound';
 import Login from './components/Login';
@@ -24,7 +24,7 @@ const home = function home() {
     <br />
     <Link to="/news">News</Link>
     <br />
-    <Link to="/dashboard">Dashboard</Link>
+    <Link to="/events">Events</Link>
     <br />
     <Link to="/header">Header</Link>
     <br />
@@ -54,7 +54,7 @@ export default (
     <Route path="map" component={MapContainer} />
     <Route path="menuAnd" component={MenuContainer} />
     <Route path="news" component={News} />
-    <Route path="dashboard" component={Dashboard} />
+    <Route path="events" component={Events} />
     <Route path="testing" component={testing} />
     <Route path="login" component={Login} />
     <Route path="signup" component={Signup} />
