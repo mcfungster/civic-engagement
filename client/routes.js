@@ -4,7 +4,7 @@ import { Route, IndexRoute, Link } from 'react-router';
 import LocationBar from './components/locationBar';
 import MenuContainer from './containers/sidebarContainer';
 import MapContainer from './containers/GoogleMapContainer';
-import Events from './components/eventsDisplay';
+import Events from './components/events/eventsDisplay';
 import News from './components/newsList';
 import PageNotFound from './components/PageNotFound';
 import Login from './components/Login';
