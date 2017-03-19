@@ -18,7 +18,7 @@ const RepBio = ({ bio, google }) => {
   // static info is available via props.rep
   const { party } = google;
   const { title } = bio.roles[0];
-  const { facebook_account, facebook_id, twitter_account, 
+  const { facebook_account, facebook_id, twitter_account,
           youtube_account, url, google_entity_id } = bio;
 
   const { first_name, middle_name, last_name } = bio;
@@ -26,7 +26,7 @@ const RepBio = ({ bio, google }) => {
 
   return (
     <div className="rep-bio">
-      <img src={google.photoUrl} alt={bio.name} style={{maxHeight:"300px"}} />
+      <img src={google.photoUrl} alt={bio.name} style={{ maxHeight: '300px' }} />
       <Title>{ party }</Title>
       <Title>{ title }</Title>
       <h3>{ first }</h3>
