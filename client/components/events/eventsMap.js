@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { GoogleMapLoader, GoogleMap, Marker, InfoWindow } from 'react-google-maps';
-import { toggleInfoWindow, closeInfoWindow } from '../actions/meetupMapActions';
+import { toggleInfoWindow, closeInfoWindow } from '../../actions/meetupMapActions';
 
 class MapContainer extends Component {
   constructor(props, context) {

@@ -12,7 +12,7 @@ import { setLoggedIn } from '../actions/loggingActions';
 import ImageUpload from './ImageUpload';
 import submitLoc from '../actions/locationBarActions';
 import HeaderContainer from '../containers/headerContainer';
-import stableHeader from '../components/stableHeader';
+import stableHeader from '../holding/stableHeader';
 import Header from 'grommet/components/Header';
 
 
