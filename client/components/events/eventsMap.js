@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { GoogleMapLoader, GoogleMap, Marker, InfoWindow } from 'react-google-maps';
-import { toggleInfoWindow, closeInfoWindow } from '../actions/meetupMapActions';
+import { toggleInfoWindow, closeInfoWindow } from '../../actions/meetupMapActions';
 
 class MapContainer extends Component {
   constructor(props, context) {
@@ -18,15 +18,15 @@ class MapContainer extends Component {
 
   componentDidUpdate(prevProps) {
     console.log('In Component Did Update');
-    const old = JSON.stringify(prevProps.MeetupEvents);
-    const current = JSON.stringify(this.props.MeetupEvents);
+    const old = JSON.stringify(prevProps.Events);
+    const current = JSON.stringify(this.props.Events);
     if (old === current) { return; }
     this._fitTheBounds();
   }
 
   _fitTheBounds() {
     const bounds = new window.google.maps.LatLngBounds();
-    const results = this.props.MeetupEvents;
+    const results = this.props.Events;
     const map = this.map;
     results.forEach((event) => {
       let vLat = event.venue ? event.venue.lat || event.group.group_lat : event.group.group_lat;
@@ -47,7 +47,7 @@ class MapContainer extends Component {
   }
 
   render() {
-    const results = this.props.MeetupEvents;
+    const results = this.props.Events;
     let markers = [];
     if (results) {
       markers = results.map((event, index) => {
@@ -100,14 +100,14 @@ class MapContainer extends Component {
 }
 
 MapContainer.propTypes = {
-  // MeetupEvents: PropTypes.arrayOf(PropTypes.object),
+  // Events: PropTypes.arrayOf(PropTypes.object),
   toggleInfoWindow: PropTypes.func,
   closeInfoWindow: PropTypes.func,
   InfoWindow: PropTypes.objectOf(PropTypes.object)
 };
 
 MapContainer.defaultProps = {
-  // MeetupEvents: 'n/a',
+  // Events: 'n/a',
   toggleInfoWindow: 'n/a',
   closeInfoWindow: 'n/a',
   InfoWindow: 'n/a'
@@ -115,8 +115,8 @@ MapContainer.defaultProps = {
 
 function mapStateToProps(state) {
   return {
-    MeetupEvents: state.Meetup.eventResults.results,
-    InfoWindow: state.MeetupMap
+    Events: state.Events.eventResults.results,
+    InfoWindow: state.EventsMap
   };
 }
 

@@ -3,10 +3,10 @@ import Split from 'grommet/components/Split';
 import Sidebar from 'grommet/components/Sidebar';
 import Box from 'grommet/components/Box';
 import Header from 'grommet/components/Header';
-import Title from 'grommet/components/Title';
-import Map from '../../containers/GoogleMapContainer';
-import Search from './meetupSearchBar';
-import EventList from './meetupEventsList';
+// import Title from 'grommet/components/Title';
+import Map from './eventsMap';
+import Search from './eventsSearchBar';
+import EventList from './eventsList';
 import HeaderContainer from '../../containers/headerContainer';
 
 const EventsDisplay = () =>

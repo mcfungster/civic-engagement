@@ -4,7 +4,7 @@ const initialState = {
   current_event: ''
 };
 
-export default function meetupMapReducer(state = initialState, action) {
+export default function eventsMapReducer(state = initialState, action) {
   switch (action.type) {
     case 'TOGGLE_INFOWINDOW':
       console.log('---hit Toogle Info Window in meetupMapReducer---');

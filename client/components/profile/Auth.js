@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import ProfileEdit from '../components/ProfileEdit';
-import { setLoggedIn } from '../actions/loggingActions';
+import ProfileEdit from './ProfileEdit';
+import { setLoggedIn } from '../../actions/loggingActions';
 
 function mapStateToProps(state) {
   return {

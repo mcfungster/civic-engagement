@@ -4,7 +4,7 @@ import Axios from 'axios';
 import Cookies from 'js-cookie';
 import { connect } from 'react-redux';
 import LoginForm from 'grommet/components/LoginForm';
-import Header from '../containers/headerContainer';
+import Header from '../../containers/headerContainer';
 
 const style = { minWidth: '600px', minHeight: '200' };
 

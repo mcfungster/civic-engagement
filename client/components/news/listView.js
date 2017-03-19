@@ -6,7 +6,7 @@ import { bindActionCreators } from 'redux';
 import Layer from 'grommet/components/Layer';
 import Spinning from 'grommet/components/icons/Spinning';
 
-import { nytimes, bingNews } from '../actions/politicianSearchActions';
+import { nytimes, bingNews } from '../../actions/politicianSearchActions';
 
 
 import NewsList from './newsList';

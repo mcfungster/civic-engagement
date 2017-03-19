@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import Accordion from 'grommet/components/Accordion';
 import AccordionPanel from 'grommet/components/AccordionPanel';
-import ListItem from './meetupEventListItem';
+import ListItem from './eventsListItem';
 
 
 class EventListComponent extends Component {
@@ -100,8 +100,8 @@ EventListComponent.defaultProps = {
 
 function mapStateToProps(state) {
   return {
-    events: state.Meetup.eventResults,
-    InfoWindow: state.MeetupMap
+    events: state.Events.eventResults,
+    InfoWindow: state.EventsMap
   };
 }
 

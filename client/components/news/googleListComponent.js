@@ -6,7 +6,7 @@ import Card from 'grommet/components/Card';
 import Box from 'grommet/components/Box';
 import Columns from 'grommet/components/Columns';
 
-import ListView from './ListView';
+import ListView from './listView';
 
 // import search from '../actions/politicianSearchActions';
 
@@ -33,10 +33,10 @@ class GoogleList extends Component {
         return (
           <Box key={key} >
             <ListView
-              title={title} 
-              name={name} 
-              party={party} 
-              phone={phoneNum} 
+              title={title}
+              name={name}
+              party={party}
+              phone={phoneNum}
             />
           </Box>
         );
