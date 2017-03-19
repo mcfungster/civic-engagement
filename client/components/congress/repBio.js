@@ -26,7 +26,7 @@ const RepBio = ({ bio, google }) => {
 
   return (
     <div className="rep-bio">
-      <img src={google.photoUrl} alt={bio.name} style={{ maxHeight: '300px' }} />
+      <img src={google.photoUrl} alt={bio.name} style={{maxHeight:"400px"}} />
       <Title>{ party }</Title>
       <Title>{ title }</Title>
       <h3>{ first }</h3>

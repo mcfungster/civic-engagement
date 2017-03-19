@@ -24,15 +24,17 @@ const propublica = {
 
       /* this was used to generate the id-lookup tables
        * otherwise this is just a key-ed route into the propublica API */
-      
-      // data = {};
+      // parsed = {};
       // JSON.parse(data).results[0].members
       //   .forEach(member => {
       //     const { id, first_name, middle_name, last_name } = member;
-      //     const name = [first_name, middle_name, last_name].join(' ').split('  ').join(' ');
-      //     parsed[name] = id;
-      //   });
-
+      //     const name1 = [first_name, last_name].join(' ').split('  ').join(' ');
+      //     const name2 = [first_name, middle_name, last_name].join(' ').split('  ').join(' ');
+      //     parsed[name1] = id;
+      //     parsed[name2] = id;
+      //   });
+      // res.status(200).send(parsed);
+      
       res.status(200).send(data);
     })
     .catch(err => console.error(err));

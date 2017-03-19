@@ -49,12 +49,12 @@ class repVoteStats extends Component {
 
     return (
       <div style={style} >
-        <Title>Last 100 votes</Title>
         <RepVoteStatsDoughnut rep={rep} />
         <button
           style={{ align: "center", marginTop: '1em' }} 
           onClick={() => this.handleClick(rep.name)}
-        >stuff voted on
+        >
+          Motions Voted On
         </button>
         { this.state.expanded ?
           (

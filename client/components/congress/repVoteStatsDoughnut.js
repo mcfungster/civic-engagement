@@ -13,7 +13,14 @@ const RepVoteStatsDoughnut = ({ rep }) => {
     animationEasing: 'easeInElastic',
     animateRotate: true,
     responsive: false,
-    maintainAspectRatio: false
+    maintainAspectRatio: false,
+    title: {
+      display: true,
+      fontSize: 20,
+      fontColor: 'black',
+      fontStyle: 'bold',
+      text: 'Last 100 Votes'
+    }
   };
 
   if (rep && rep.votes && rep.roles) {

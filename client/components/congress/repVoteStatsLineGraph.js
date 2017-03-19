@@ -1,8 +1,5 @@
 import React from 'react';
 
-import Label from 'grommet/components/Label';
-import Title from 'grommet/components/Title';
-
 import { Line } from 'react-chartjs-2';
 import { LineGraphTemplate } from '../../components/graphTemplates';
 
@@ -19,7 +16,23 @@ const RepVoteStatsLineGraph = ({ rep }) => {
     animateRotate: true,
     responsive: false,
     maintainAspectRatio: false,
-    legend: { display: false }
+    legend: { display: false },
+    title: {
+      display: true,
+      fontSize: 20,
+      fontColor: 'black',
+      fontStyle: 'bold',
+      text: '% of Votes Missed'
+    },
+    scales: {
+      xAxes: [{
+        display: true,
+        scaleLabel: {
+          display: true,
+          labelString: 'Session of Congress'
+        }
+      }]
+    },
   };
 
   const { roles } = rep;
@@ -35,14 +48,11 @@ const RepVoteStatsLineGraph = ({ rep }) => {
   }
 
   return (
-    <div>
-      <Title>% of Votes Missed</Title>
-      <Line
-        data={lineGraphData}
-        options={options}
-        height={250}
-      />
-    </div>
+    <Line
+      data={lineGraphData}
+      options={options}
+      height={250}
+    />
   );
 }
 
