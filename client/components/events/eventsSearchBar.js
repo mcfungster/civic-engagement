@@ -9,7 +9,7 @@ import SearchInput from 'grommet/components/SearchInput';
 
 import meetupSearch from '../../actions/meetupSearchActions';
 
-class MeetupSearchBar extends Component {
+class EventsSearchBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -96,4 +96,4 @@ function mapStateToProps(state) { // Temporary state setup. Please feel free to 
   };
 }
 
-export default connect(mapStateToProps, { meetupSearch })(MeetupSearchBar);
+export default connect(mapStateToProps, { meetupSearch })(EventsSearchBar);
