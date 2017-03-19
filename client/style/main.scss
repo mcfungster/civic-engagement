@@ -61,6 +61,12 @@ section:not(.grommetux-section).meetup-map {
 //   margin: 12px;
 // }
 
+.selected {
+  header {
+    font-weight: bold;
+  }
+}
+
 .grommetux-heading--strong {
   font-weight: 500;
   background-color: white;

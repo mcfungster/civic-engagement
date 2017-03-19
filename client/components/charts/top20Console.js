@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-
-import Chart from './Top20Chart';
-import top20Search from '../actions/top20SearchActions';
-import { categories, cycles } from '../constants/top20SelectorOptions';
 import Spinning from 'grommet/components/icons/Spinning';
 import Select from 'grommet/components/Select';
 import Form from 'grommet/components/Form';
-import FormField from 'grommet/components/FormField';
+// import shortid from 'shortid';
+import Chart from './top20Chart';
+import top20Search from '../../actions/top20SearchActions';
+import { categories, cycles } from '../../constants/top20SelectorOptions';
 
 
 class Top20Console extends Component {
@@ -18,9 +17,7 @@ class Top20Console extends Component {
         value: 'contribution-total',
         label: 'Total Raised'
       },
-      // 'contribution-total'
       catKey: 'total_contributions',
-      // cycle: '2016'
       cycle: {
         value: '2016',
         label: '2016'
@@ -82,61 +79,49 @@ class Top20Console extends Component {
     });
   }
 
-
-//   onChange      {function ({target: , option: , value: })}
-// Function that will be called when the user selects an option. The target corresponds to the embedded input element, allowing you to distinguish which component triggered the event. The option contains the object chosen from the supplied options. The value contains all selected options when multiple={true}.
-
-  // handleSubmit(event) {
-  //   event.preventDefault();
-  // }
-
   render() {
-    const catOptions = categories.map(category =>
-      (
-        <option key={category[1]} value={category[0]}>{ category[3] }</option>
-      )
-    );
-    const cycleOptions = cycles.map(cycle =>
-      (
-        <option value={cycle}>{cycle}</option>
-      )
-    );
+    // const catOptions = categories.map(category =>
+    //   (
+    //     <option key={category[1]} value={category[0]}>{ category[3] }</option>
+    //   )
+    // );
+    // const cycleOptions = cycles.map(cycle =>
+    //   (
+    //     <option value={cycle}>{cycle}</option>
+    //   )
+    // );
 
     const catOptionsNew = categories.map((category) => {
+      const val = category[0];
+      const lab = category[3];
       return {
-        value: category[0],
-        label: category[3]
+        value: val,
+        label: lab
       };
     });
+
     const cycleOptionsNew = cycles.map((cycle) => {
+      const val = cycle;
+      const lab = cycle;
       return {
-        value: cycle,
-        label: cycle
+        value: val,
+        label: lab
       };
     });
 
     if (this.props.data && this.props.data.results) {
-      const results = this.props.data.results;
-      const spend = results.map((candidate, index) => {
-          return (
-            <div
-              key={index}
-            >
-              {candidate.name}
-            </div>
-          )
-      });
+      // const results = this.props.data.results;
+      // const spend = results.map(candidate =>
+      //     (
+      //       <div key={shortid.generate()} >
+      //         {candidate.name}
+      //       </div>
+      //     )
+      // );
 
-
-
-
-      // pad       none|small|medium|large|{...}
-      // The amount of padding to put around the contents. An object can be specified to distinguish horizontal and vertical padding: {horizontal: none|small|medium|large, vertical: none|small|medium|large}. Defaults to none.
       return (
         <div className="top20-console">
-          <Form
-            className="row"
-          >
+          <Form className="row" >
             <Select
               value={this.state.category}
               onChange={this.catHandleChangeNew}
@@ -151,11 +136,12 @@ class Top20Console extends Component {
               placeHolder="Election Cycle"
               className="top20-cycle-selector"
             />
-
-
-
-
           </Form>
+          <Chart
+            data={this.props.data.results}
+            search={this.state.catKey}
+          />
+
           {/* <div className="row">
             <form>
               <label>
@@ -172,12 +158,6 @@ class Top20Console extends Component {
               </label>
             </form>
           </div> */}
-          {/* <div> */}
-            <Chart
-              data={this.props.data.results}
-              search={this.state.catKey}
-            />
-          {/* </div> */}
         </div>
       );
     }

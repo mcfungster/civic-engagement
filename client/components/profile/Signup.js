@@ -8,7 +8,7 @@ import Heading from 'grommet/components/Heading';
 import FormFields from 'grommet/components/FormFields';
 import Footer from 'grommet/components/Footer';
 import Button from 'grommet/components/Button';
-import Header2 from '../containers/headerContainer';
+import Header2 from '../../containers/headerContainer';
 
 class Signup extends React.Component {
   constructor(props) {

@@ -2,8 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as actions from '../actions/locationBarActions';
-import GoogleList from '../components/googleListComponent';
-import LocationBar from '../components/locationBar';
+import GoogleList from '../components/news/googleListComponent';
+import LocationBar from '../components/news/locationBar';
 
 class ResultsComp extends React.Component {
   componentWillMount() {

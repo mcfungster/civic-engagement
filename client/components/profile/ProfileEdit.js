@@ -8,11 +8,11 @@ import { bindActionCreators } from 'redux';
 import Accordion from 'grommet/components/Accordion';
 import AccordionPanel from 'grommet/components/AccordionPanel';
 import Paragraph from 'grommet/components/Paragraph';
-import { setLoggedIn } from '../actions/loggingActions';
+import { setLoggedIn } from '../../actions/loggingActions';
 import ImageUpload from './ImageUpload';
-import submitLoc from '../actions/locationBarActions';
-import HeaderContainer from '../containers/headerContainer';
-import stableHeader from '../components/stableHeader';
+import submitLoc from '../../actions/locationBarActions';
+import HeaderContainer from '../../containers/headerContainer';
+// import stableHeader from '../../holding/stableHeader';
 import Header from 'grommet/components/Header';
 
 
