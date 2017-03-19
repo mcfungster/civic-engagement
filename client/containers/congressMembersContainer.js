@@ -12,7 +12,7 @@ import HeaderContainer from '../containers/headerContainer';
 
 const CongressMembersContainer = () => (
   <div>
-    <Header className="landing-main-nav" size="small" float={false} fixed={true}>
+    <Header className="home-main-nav" size="small" float={false} fixed={true}>
       <HeaderContainer />
     </Header>
     <div style={{ marginTop: "80px" }}>

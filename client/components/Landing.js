@@ -41,7 +41,7 @@ class Landing extends Component {
     event.preventDefault();
     this.props.meetupSearch(this.state.input);
     this.props.locationSearch(this.state.input);
-    this.context.router.push('/dashboard');
+    this.context.router.push('/events');
   }
 
   toggleVisibility() {

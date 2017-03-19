@@ -25,7 +25,7 @@ class SidebarContainer extends React.Component {
   render() {
     return (
       <div>
-          <Header className="landing-main-nav" style={{ marginLeft: '40px'}}size="small" float={false} fixed={true}>
+          <Header className="home-main-nav" style={{ marginLeft: '40px'}}size="small" float={false} fixed={true}>
             <HeaderContainer />
           </Header>
           <ResultsComp />
