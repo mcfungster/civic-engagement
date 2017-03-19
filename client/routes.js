@@ -10,9 +10,9 @@ import PageNotFound from './components/PageNotFound';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import Auth from './components/Auth';
-import Top20 from './components/Top20Wrapper';
+import Top20 from './components/top20/top20Wrapper';
 import HeaderContainer from './containers/headerContainer';
-import Landing from './components/Landing';
+import HomePage from './components/Landing';
 import CongressContainer from './containers/congressMembersContainer';
 
 const home = function home() {
@@ -49,7 +49,7 @@ const testing = function testing() {
 
 export default (
   <Route path="/" >
-    <IndexRoute component={Landing} />
+    <IndexRoute component={HomePage} />
     <Route path="location" component={LocationBar} />
     <Route path="map" component={MapContainer} />
     <Route path="menuAnd" component={MenuContainer} />
