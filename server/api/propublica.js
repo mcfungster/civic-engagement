@@ -2,7 +2,6 @@ const houseID = require('../id_tables/house');
 const senateID = require('../id_tables/senate');
 
 const rp = require('request-promise');
-const param = require('jquery-param');
 
 const propublicaApiKey = process.env.PROPUBLICA_APIKEY;
 const SESSION = 115;

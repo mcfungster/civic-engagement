@@ -19,10 +19,8 @@ import RepVoteStatsDoughnut from './repVoteStatsDoughnut';
 import { bio, bills, votes } from '../../actions/politicianSearchActions';
 import testing from '../../actions/locationBarActions';
 
-// import { Propublica, testReps } from './defaultProps';
-
 /* this component will need a location
- * already searched and seeded into app state */
+   already searched and seeded into app state */
 class RepDisplay extends Component {
   constructor(props) {
     super(props);
