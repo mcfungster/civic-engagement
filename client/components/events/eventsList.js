@@ -100,8 +100,8 @@ EventListComponent.defaultProps = {
 
 function mapStateToProps(state) {
   return {
-    events: state.Meetup.eventResults,
-    InfoWindow: state.MeetupMap
+    events: state.Events.eventResults,
+    InfoWindow: state.EventsMap
   };
 }
 

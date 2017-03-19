@@ -1,4 +1,4 @@
-export default function meetupReducer(state = { eventResults: [] }, action) {
+export default function eventsReducer(state = { eventResults: [] }, action) {
   switch (action.type) {
     case 'Meetup_Search':
       // console.log('hit meetupReducer');
